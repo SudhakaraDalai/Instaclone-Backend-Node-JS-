@@ -3,7 +3,8 @@ const dotenv = require('dotenv');
 
 dotenv.config();
 
-mongoose.connect(process.env.DATABASE_URL,{ useNewUrlParser: true, useUnifiedTopology: true})
+mongoose.connect("mongodb+srv://root:sudhakar@cluster0.d1zvyde.mongodb.net/?retryWrites=true&w=majority",
+{ useNewUrlParser: true, useUnifiedTopology: true})
   .then(() => {
     console.log("Login successful");
   })
