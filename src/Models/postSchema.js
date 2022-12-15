@@ -6,7 +6,7 @@ const PostSchema = new Schema({
     location: String,
     likes: Number,
     description: String,
-    PostImage : Buffer,
+    PostImage : String,
     date: String
 })
 
