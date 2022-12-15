@@ -8,6 +8,8 @@ const PostSchema = new Schema({
     description: String,
     PostImage : String,
     date: String
-})
+},
+{collection :"instaclone"}
+)
 
 module.exports = mongoose.model('Post', PostSchema)
