@@ -2,34 +2,12 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const PostSchema = new Schema({
-    name : {
-        type: String,
-        required : true
-    },
-
-    location : {
-        type: String,
-        required: true
-    },
-
+    name: String,
+    location: String,
     likes: Number,
-
-
-    description : {
-        type: String,
-        required: true
-    },
-
-    PostImage :  {
-        data : Buffer,
-        contentType: String
-     },
-
-     date : {
-        type: String
-       
-    }
-
+    description: String,
+    PostImage : Buffer,
+    date: String
 })
 
 module.exports = mongoose.model('Post', PostSchema)

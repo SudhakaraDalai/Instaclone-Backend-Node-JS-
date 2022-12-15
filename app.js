@@ -5,7 +5,7 @@ const cors = require('cors')
 const connect = require('./src/Connection/connect');
 const postRoute = require("./src/Routes/post")
 
-const port = process.env.PORT || 9050;
+const port = process.env.PORT || 3000;
 
 const app = express();
 
@@ -18,4 +18,4 @@ app.use(express.urlencoded({extended: true}));
 app.use(express.json()); 
 app.use("",postRoute);
 
-app.listen(port ,()=>{ console.log(`Server is on 9050`)})
+app.listen(port ,()=>{ console.log(`Server is on 3000`)})
