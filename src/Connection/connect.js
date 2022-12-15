@@ -1,8 +1,9 @@
 const mongoose = require("mongoose");
+const dotenv = require('dotenv');
 
-mongoose
-  .connect(
-    'mongodb+srv://sudhakar:sudhakar768@sudhakar.qf9hq4y.mongodb.net/?retryWrites=true&w=majority')
+dotenv.config();
+
+mongoose.connect(process.env.DATABASE_URL,{ useNewUrlParser: true, useUnifiedTopology: true ,useFindAndModify:false})
   .then(() => {
     console.log("Login successful");
   })
