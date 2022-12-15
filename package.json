@@ -1,0 +1,28 @@
+{
+  "name": "instaclone_backend",
+  "version": "1.0.0",
+  "description": "\\Instaclone ReactJs\\",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SudhakaraDalai/Instaclone-Backend-Node-JS-.git"
+  },
+  "author": "Sudhakar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SudhakaraDalai/Instaclone-Backend-Node-JS-/issues"
+  },
+  "homepage": "https://github.com/SudhakaraDalai/Instaclone-Backend-Node-JS-#readme",
+  "dependencies": {
+    "cloudinary": "^1.32.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.0",
+    "mongoose": "^6.8.0",
+    "nodemon": "^2.0.20"
+  }
+}
